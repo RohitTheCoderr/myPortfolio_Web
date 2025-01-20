@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .scrolling-text {
+    animation: scroll 15s linear infinite;
+  }
+  
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* In your global CSS file, e.g., styles.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+/* rohit style suru */
+
+
+/* header background image style  */
+#headerMainBg{
+  height: 60vh;
+  width: 100vw;
+  cursor: pointer;
+}
+#headerMainBg img{
+  height: 100%;
+  width: 100%;
+}
+
+/* +++++++++++++ AboutComsec section start +++++++++++++++ */
+.AboutComsec{
+  height: auto;
+  width:100vw;
+  background: #d9e3f9;
+  padding: 1.5rem 0;
+  margin: 1.5rem 0;
+}
+.forwidth{
+  height: auto;
+  width:90vw;
+  margin: auto;
+}
+.AboutComMainDiv{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.AbComImgDiv{
+  width: 30rem;
+  height: 20rem;
+  text-align: center;
+  cursor: pointer;
+  background: #295174;
+  border-radius: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AbComImgDiv img{
+  width: 30rem;
+  height: 100%;
+  border-radius: 50px 0 50px 0;
+  transition: all 0.5s linear;
+}
+.AbComImgDiv img:hover{
+  width: 28rem;
+  height: 18rem;
+  border-radius: 50px 0 50px 0;
+}
+.TextContainer{
+  width: 30rem;
+  height: 80%;
+  color: black;
+}
+.TextContainer p{
+  font-size: 18px;}
+  
+.headingH1{
+  font-size: 3rem;
+  color: #162c5a;
+  margin-bottom: 1rem;
+  text-shadow: 4px 2px 3px rgb(255, 138, 138);
+}
+.headingH2{
+  color: #224288;
+  margin-bottom: -0.5rem;
+ 
+}
+
+/* +++++++++++++++++++++  our srvices section start +++++++++++++++++++++++ */
+
+.sevText{
+  width: 100%;
+  text-align: center;
+}
+
+.servicesImgDivContainer{
+  width: 100%;
+  height: 12rem;
+  border-radius: 15px;
+  background:#455985;
+  margin-top: 7rem;
+ 
+}
+.AllThreeItem{
+  width: 100%;
+  height: auto;
+  display: flex;
+ justify-content: space-between;
+}
+.SerheadingH2{
+  color: #224288;
+}
+.combo{
+  width: 20rem;
+  height: 18rem;
+  color: wheat;
+  text-align: center;
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.imgDiv{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+  }
+
+.imgDiv img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.imgDiv img:hover{
+  transform: scale(1.1); 
+}
+.comboText h3{
+  margin-bottom: -0.4rem;
+}
+.comboText h3:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  }
+.comboText p{
+font-size: 15px;
+color: white;
+}
+
+
