@@ -14,7 +14,7 @@ const Footer2 = () => {
   }, []);
 
   const navItems = [
-    { href: '+91 96548 53181', icon: FaWhatsapp, tooltip: 'Whatsapp' },
+    // { href: '+91 96548 53181', icon: FaWhatsapp, tooltip: 'Whatsapp' },
     { href: 'https://www.linkedin.com/in/rohit-kumar2003', icon: FaLinkedinIn, tooltip: 'Linkedin' },
     { href: 'https://github.com/RohitTheCoderr', icon: FaGithub, tooltip: 'Github' },
     { href: 'https://www.instagram.com/rohit_kr3181/?__pwa=1', icon: FaInstagram, tooltip: 'Instagram' },
