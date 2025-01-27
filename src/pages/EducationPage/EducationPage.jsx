@@ -1,85 +1,3 @@
-// import React from 'react'
-
-// function EducationPage() {
-//     return (
-//         <>
-//             <div className="bg-[url('/educationpage.png')] bg-center bg-cover h-[60%] w-screen flex justify-center sm:justify-start items-center ">
-//                 <div className='absolute sm:left-[10%] lg:left-[15%] text-center sm:text-start  tracking-wider'>
-//                     <h1 className='text-4xl sm:text-3xl md:text-5xl lg:text-7xl text-[#ffffff] uppercase font-bold mb-2 md:mb-4'> my Education</h1>
-//                     <h4 className='text-[#ff0000] text-xl md:text-2xl font-semibold'>A Journey of Knowledge and Growth</h4>
-//                 </div>
-//             </div>
-
-//             <div className="w-[90%] h-auto mx-auto mt-12 flex flex-wrap md:flex-nowrap justify-center md:justify-between lg:justify-normal items-center gap-8 md:gap-4 lg:gap-12">
-//                 {/* Image Section */}
-//                 <div className="relative w-full h-[35rem] gap-2 mx-auto text-sm sm:text-base md:w-[55%] lg:w-[60%]">
-//                     <div className='w-full flex justify-between'>
-//                         <img src="/ugClg/front.jpg" alt="" className=" w-[32%]" />
-//                         <img src="/ugClg/gate.jpg" alt="" className=" w-[32%]" />
-//                         <img src="/ugClg/lab.jpg" alt="" className=" w-[32%]" />
-//                     </div>
-//                     <div className='flex justify-between'>
-//                           <img src="/ugClg/img2.jpg" alt="" className="w-[49%] " />
-//                           <img src="/ugClg/img1.jpg" alt="" className=" w-[49%]" />
-//                     </div>
-//                 </div>
-//                 {/* Content Section */}
-//                 <div className="w-full text-sm sm:text-base mx-auto md:w-[55%] lg:w-[45%] font-DM text-slate-700">
-//                     <h2 className="text-3xl font-bold text-[#ff0000] mb-4">Matrix Education</h2>
-//                     <div className="mb-4">
-//                         <p className="font-medium text-gray-700">Duration</p>
-//                         <p>2018</p>
-//                     </div>
-//                     <div className="p-4 border rounded-lg shadow-md mb-4">
-//                         <h3 className="text-xl font-semibold text-[#ff0000]">Achievements</h3>
-//                         <p className="text-gray-600">Top percentile in exams with 74.6%</p>
-//                     </div>
-//                     <p className="text-gray-700">
-//                         <span className="text-6xl font-Poppins">M</span>y journey through Matrix
-//                         Education provided me with an excellent foundation in mathematics,
-//                         science, and problem-solving. It fostered my growth both academically and
-//                         personally.
-//                     </p>
-//                 </div>
-//             </div>
-//             <div className="w-[90%] h-auto mx-auto mt-12 flex flex-wrap md:flex-nowrap justify-center md:justify-between lg:justify-normal items-center gap-8 md:gap-4 lg:gap-12">
-//                 {/* Image Section */}
-//                 <div className="w-full text-sm sm:text-base mx-auto md:w-[55%] lg:w-[45%] font-DM text-slate-700">
-//                     <h2 className="text-3xl font-bold text-[#ff0000] mb-4">Matrix Education</h2>
-//                     <div className="mb-4">
-//                         <p className="font-medium text-gray-700">Duration</p>
-//                         <p>2018</p>
-//                     </div>
-//                     <div className="p-4 border rounded-lg shadow-md mb-4">
-//                         <h3 className="text-xl font-semibold text-[#ff0000]">Achievements</h3>
-//                         <p className="text-gray-600">Top percentile in exams with 74.6%</p>
-//                     </div>
-//                     <p className="text-gray-700">
-//                         <span className="text-6xl font-Poppins">M</span>y journey through Matrix
-//                         Education provided me with an excellent foundation in mathematics,
-//                         science, and problem-solving. It fostered my growth both academically and
-//                         personally.
-//                     </p>
-//                 </div>
-//                 <div className="relative w-full h-[35rem] gap-2 mx-auto text-sm sm:text-base md:w-[55%] lg:w-[60%]">
-//                     <div className='w-full flex justify-between'>
-//                         <img src="/ugClg/front.jpg" alt="" className=" w-[32%]" />
-//                         <img src="/ugClg/gate.jpg" alt="" className=" w-[32%]" />
-//                         <img src="/ugClg/lab.jpg" alt="" className=" w-[32%]" />
-//                     </div>
-//                     <div className='flex justify-between'>
-//                           <img src="/ugClg/img2.jpg" alt="" className="w-[49%] " />
-//                           <img src="/ugClg/img1.jpg" alt="" className=" w-[49%]" />
-//                     </div>
-//                 </div>
-
-//             </div>
-//         </>
-
-//     )
-// }
-
-// export default EducationPage
 import React from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -140,7 +58,7 @@ function EducationPage() {
             subtitle: 'Chandawali Ballabgarh',
             duration: '2018-2020',
             achievements: 'Achieved 80% in board exams with a Commerce background.',
-            description: '12th grade was a pivotal phase where I strengthened my analytical and problem-solving skills.',
+            description: 'In 12th grade, I pursued Commerce with Mathematics, which enhanced my analytical and problem-solving skills while providing me with a solid foundation in logical reasoning and quantitative aptitude.',
             images: ['/pgClg/front.avif', '/pgClg/gate.jpg', '/pgClg/computerLab.jpg', '/pgClg/Library2.avif', '/pgClg/main.jpg'],
         },
         {
