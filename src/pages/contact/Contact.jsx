@@ -1,17 +1,27 @@
 import React from "react";
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaMobileAlt } from "react-icons/fa";
+import { FaMobileAlt,FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot,FaGithub, FaInstagram } from "react-icons/fa6";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import useScrollToTop from '../../hooks/useScrollToTop';
+import NavItem from "../../components/cards/NavItem";
 
 function Contact() {
 
+    useScrollToTop()
+
+    const navItems = [
+        { href: "https://wa.me/9654853181?text=Hello!%20I'd%20like%20to%20know%20more%20about%20your%20services.", icon: FaWhatsapp, tooltip: 'Whatsapp' },
+        { href: 'https://www.linkedin.com/in/rohit-kumar2003', icon: FaLinkedinIn, tooltip: 'Linkedin' },
+        { href: 'https://github.com/RohitTheCoderr', icon: FaGithub, tooltip: 'Github' },
+        { href: 'https://www.instagram.com/rohit_kr3181/?__pwa=1', icon: FaInstagram, tooltip: 'Instagram' },
+    ];
     return (
         <>
             <section className="w-full relative bg-cover py-4 bg-center bg-no-repeat font-sans bg-black "
-                // style={{ backgroundImage: `url("enquirywallpaper1.jpg")` }}
-                 >
+            // style={{ backgroundImage: `url("enquirywallpaper1.jpg")` }}
+            >
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-opacity-30"></div>
 
@@ -19,7 +29,7 @@ function Contact() {
                     <div className="h-auto w-auto m-auto flex justify-around flex-wrap-reverse gap-4 ">
                         <div className="h-auto bg-white/5 backdrop-blur-lg py-2">
                             <div><h1 className="text-white text-[1rem] sm:text-xl md:text-2xl lg:text-[2rem] xl:text-[2.2rem] font-semibold text-center underline capitalize">Contact information</h1></div>
-                           
+
                             <div className="h-auto w-[80%] m-auto sm:w-[70%] md:w-[30rem] sm:px-2 mt-10">
                                 <div className=" w-auto flex jusctify-center gap-4 my-4">
                                     <FaMobileAlt className="text-[15px] sm:text-[19px] md:text-[22px] lg:text-[24px] xl:text-[26px] text-white" />
@@ -34,6 +44,13 @@ function Contact() {
                                 <div className=" w-auto flex jusctify-center gap-4 my-4">
                                     <span><FaLocationDot className="text-[18px] sm:text-2xl text-white" /></span>
                                     <span className="text-white text-[14px] sm:text-[18px] ">Tirkha colony Ballabgarh Faridabad (Delhi NCR) Haryana </span>
+                                </div>
+                            </div>
+                            <div className="w-auto mt-10 h-auto">
+                                <div className="flex justify-center gap-0 sm:gap-1 md:gap-4">
+                                    {navItems.map((item, index) => (
+                                        <NavItem key={index} href={item.href} icon={item.icon} tooltip={item.tooltip} iconbg={"bg-white "} liStyle={"w-[3rem]"} />
+                                    ))}
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,9 @@
 import React from 'react'
 import SkillsBarGraph from '../../components/rechart'
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 function SkillsPage() {
+    useScrollToTop()
     return (
         <>
                 <div className="bg-[url('/skills.jpg')] bg-center bg-cover h-[60%] w-screen flex justify-center sm:justify-start items-center"></div>

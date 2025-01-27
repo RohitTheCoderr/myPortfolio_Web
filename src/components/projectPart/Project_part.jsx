@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Project_part = () => {
+
     useEffect(() => {
         AOS.init(); // Initialize AOS animations
     }, []);

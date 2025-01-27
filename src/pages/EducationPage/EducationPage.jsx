@@ -1,11 +1,13 @@
 import React from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 const EducationSection = ({ mainHead, title, subtitle, duration, achievements, description, images, isImageLeft }) => {
     React.useEffect(() => {
         AOS.init();
     }, []);
+    useScrollToTop()
     return (
         <div
             className={`w-[90%] h-auto mx-auto mt-12 flex flex-wrap md:flex-nowrap ${isImageLeft ? 'flex-row' : 'flex-row-reverse'

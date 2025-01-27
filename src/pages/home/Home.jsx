@@ -5,7 +5,9 @@ import Educationpart from '../../components/educationPart/Educationpart'
 import { Button } from '../../components/formComponents/Buttons/Button'
 import Skills_part from '../../components/skillsPart/Skills_part'
 import Project_part from '../../components/projectPart/Project_part'
+import useScrollToTop from '../../hooks/useScrollToTop';
 function Home() {
+  useScrollToTop()
   return (
     <>
       <div className=' w-screen h-auto  bg-black flex justify-center items-center py-10 md:py-24 '>

@@ -7,8 +7,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 
+import useScrollToTop from '../../hooks/useScrollToTop';
 // Reusable ProjectCard Component
 const ProjectCard = ({ title, description, techStack, images }) => {
+  useScrollToTop()
    React.useEffect(() => {
           AOS.init();
       }, []);
