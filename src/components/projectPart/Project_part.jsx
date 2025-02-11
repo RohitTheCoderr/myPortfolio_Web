@@ -40,6 +40,23 @@ const Project_part = () => {
                 </div>
                 <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
+                        src="/projectsImg/lead_mana_sys/home.png"
+                        alt="lead management"
+                        className="block w-full h-full  transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-full w-full h-full bg-gradient-to-t from-black via-gray-800 to-transparent text-[#ff0000] opacity-0 group-hover:top-0 group-hover:opacity-90 transition-all duration-500 flex flex-col items-center justify-center">
+                        <h3 className="text-lg font-bold uppercase">Lead Management System</h3>
+                        <p className="text-sm text-white">Designed and developed independently</p>
+                        <Link to={"/projects"}>
+                            <button className="mt-4 px-4 py-2 bg-[#ff0000] text-white rounded-md shadow-md hover:bg-[#cc0000] transition-all duration-300">
+                                View Project
+                            </button>
+                        </Link>
+                        
+                    </div>
+                </div>
+                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+                    <img
                         src="projectsImg/atifram/home.png"
                         alt="tree"
                         className="block w-full h-full  transition-transform duration-500 group-hover:scale-105"

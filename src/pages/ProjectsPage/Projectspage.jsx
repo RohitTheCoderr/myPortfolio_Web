@@ -11,13 +11,13 @@ import useScrollToTop from '../../hooks/useScrollToTop';
 // Reusable ProjectCard Component
 const ProjectCard = ({ title, description, techStack, images }) => {
   useScrollToTop()
-   React.useEffect(() => {
-          AOS.init();
-      }, []);
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="bg-slate-800 my-4 w-full md:w-[49%] p-2 sm:p-4 rounded-lg shadow-lg" data-aos="fade-up">
       <div className="bg-gray-200 p-4 rounded-lg">
-        <h2 className= "text-lg sm:text-2xl text-[#ff0000] font-bold mb-2">{title}</h2>
+        <h2 className="text-lg sm:text-2xl text-[#ff0000] font-bold mb-2">{title}</h2>
         <p className="text-[12px] sm:text-base mb-2">{description}</p>
         <p className="text-[12px] sm:text-base">
           <span className="text-[#ff0000] font-bold">Technology used: </span>
@@ -53,6 +53,19 @@ function Projectspage() {
       images: ["/projectsImg/shopeaseP/shopease.png", "/projectsImg/shopeaseP/arrival.png", "/projectsImg/shopeaseP/cart.png", "/projectsImg/shopeaseP/categories.png", "/projectsImg/shopeaseP/details.png", "/projectsImg/shopeaseP/whishlist.png"],
     },
     {
+      title: "Lead Management System",
+      description: (
+        <ul className="list-disc pl-4">
+          <li>A basic lead management system where users can add, update, and delete leads</li>
+          <li>A login page with authentication using JWT (JSON Web Token).</li>
+          <li>Secure authentication and proper token handling.</li>
+          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a href="https://exten-frontend.onrender.com/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a></li>
+        </ul>
+      ),
+      techStack: "React.js, Tailwind CSS, zustand, node.js, express.js, mongoDB, Restfull_API",
+      images: ["/projectsImg/lead_mana_sys/home.png", "/projectsImg/lead_mana_sys/createLead.png", "/projectsImg/lead_mana_sys/leads.png", "/projectsImg/lead_mana_sys/login.png", "/projectsImg/lead_mana_sys/phonesize.png"],
+    },
+    {
       title: "FoodZilla Web App",
       description: (
         <ul className="list-disc pl-4">
@@ -81,11 +94,11 @@ function Projectspage() {
         <ul className="list-disc pl-4">
           <li>Create a platform for students to showcase their completed projects.</li>
           <li>Allow students to create and manage their projects.</li>
-          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a  href="https://glittery-capybara-2d6567.netlify.app/"  className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a></li>
+          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a href="https://glittery-capybara-2d6567.netlify.app/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a></li>
         </ul>
       ),
       techStack: "React.js, Tailwind CSS, Redux Toolkit, Node.js, Express, MongoDB",
-      images: ["/projectsImg/actingScl/actingScl.png", "/projectsImg/actingScl/client.png", "/projectsImg/actingScl/contact.png", "/projectsImg/actingScl/course.png","/projectsImg/actingScl/footer.png", "/projectsImg/actingScl/homedark.png"],
+      images: ["/projectsImg/actingScl/actingScl.png", "/projectsImg/actingScl/client.png", "/projectsImg/actingScl/contact.png", "/projectsImg/actingScl/course.png", "/projectsImg/actingScl/footer.png", "/projectsImg/actingScl/homedark.png"],
     },
     {
       title: "Shri Ram college eng. & managament",
@@ -107,30 +120,30 @@ function Projectspage() {
           <li>Share insights about the company, its vision, and industry experience.</li>
           <li>Highlight values like innovation, integrity, and customer focus.</li>
           <li> Brief descriptions of key IT services offered (e.g., Web Development)</li>
-          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a  href="https://rohitthecoderr.github.io/Atiframe/"  className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a>
-</li>
- </ul>
+          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a href="https://rohitthecoderr.github.io/Atiframe/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a>
+          </li>
+        </ul>
       ),
       techStack: "Html,CSS, javaScript, Third-party library.",
-      images: ["/projectsImg/atifram/home.png", "/projectsImg/atifram/projects.png", "/projectsImg/atifram/services.png", "/projectsImg/atifram/team.png",  "/projectsImg/atifram/digital.png"],
+      images: ["/projectsImg/atifram/home.png", "/projectsImg/atifram/projects.png", "/projectsImg/atifram/services.png", "/projectsImg/atifram/team.png", "/projectsImg/atifram/digital.png"],
     },
   ];
 
   return (
     <>
-     <h2 className='text-4xl text-center uppercase italic font-DM font-Five text-[#ff0000] mt-5' data-aos="fade-down"> My Projects </h2>
-    <div className="w-[100%] sm:w-[90%] md:w-[95%] lg:w-[90%] flex flex-wrap justify-center gap-4 m-auto">
-      {projects.map((project, index) => (
-        <ProjectCard
-        key={index}
-          title={project.title}
-          description={project.description}
-          techStack={project.techStack}
-          images={project.images}
+      <h2 className='text-4xl text-center uppercase italic font-DM font-Five text-[#ff0000] mt-5' data-aos="fade-down"> My Projects </h2>
+      <div className="w-[100%] sm:w-[90%] md:w-[95%] lg:w-[90%] flex flex-wrap justify-center gap-4 m-auto">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            techStack={project.techStack}
+            images={project.images}
           />
         ))}
-    </div>
-        </>
+      </div>
+    </>
   );
 }
 

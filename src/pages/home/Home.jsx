@@ -17,7 +17,7 @@ function Home() {
             <h1 className='text-[#FF0000] font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl'>I'm Rohit kumar</h1>
             <div className='text-white font-sans text-sm sm:text-xl lg:text-2xl  mt-[1rem]'>A Web developer specializing in MERN stack</div>
             {/* <div className='mt-12 flex  '><span className='group flex cursor-pointer'><div className=' group-hover:bg-white group-hover:text-black text-sm sm:text-base xl:text-xl font-bold h-[2rem] md:h-[3rem] xl:h-[4rem] px-4 md:px-8 xl:px-10 text-white capitalize border-[1px] flex items-center border-r-0 border-white'>download resume </div> <button className=' h-[2rem] md:h-[3rem] xl:h-[4rem] w-[3rem] sm:w-[4rem] md:w-[5rem] transition-transform  bg-white group-hover:bg-[#ff0000] text-2xl xl:text-3xl group-hover:text-white font-extrabold'>→</button></span> </div> */}
-            <Button context=" download resume" style="" btStyle="bg-[#ff0000] text-white" download="/rohit kumar (1).pdf"/>
+            <Button context=" download resume" style="" btStyle="bg-[#ff0000] text-white" download="/Rohit_kumar_cv.pdf"/>
           </div>
           <div className=''>
             <div className='relative bg-[#ff0000] h-[14rem] sm:h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem] w-[14rem] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] xl:w-[30rem] shadow-white shadow-[1px_2px_20px_1px_rgba(0,0,0,0.3)] flex justify-center items-center rounded-full '><img src="/rohit-crope.jpg" alt="" className='h-full w-full bg-black  rounded-full' /></div>
