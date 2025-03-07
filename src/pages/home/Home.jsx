@@ -15,7 +15,7 @@ function Home() {
           <div className='font-sans my-[2rem] sm:my-0'>
             <h3 className='text-[#ffffff] my-2 text-sm sm:text-lg lg:text-xl '>Hello Everyone.</h3>
             <h1 className='text-[#FF0000] font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl'>I'm Rohit kumar</h1>
-            <div className='text-white font-sans text-sm sm:text-xl lg:text-2xl  mt-[1rem]'>A Web developer specializing in MERN stack</div>
+            <div className='text-white font-sans text-sm sm:text-xl lg:text-2xl mt-3 md:mt-[1rem]'>A Web developer specializing in MERN stack</div>
             {/* <div className='mt-12 flex  '><span className='group flex cursor-pointer'><div className=' group-hover:bg-white group-hover:text-black text-sm sm:text-base xl:text-xl font-bold h-[2rem] md:h-[3rem] xl:h-[4rem] px-4 md:px-8 xl:px-10 text-white capitalize border-[1px] flex items-center border-r-0 border-white'>download resume </div> <button className=' h-[2rem] md:h-[3rem] xl:h-[4rem] w-[3rem] sm:w-[4rem] md:w-[5rem] transition-transform  bg-white group-hover:bg-[#ff0000] text-2xl xl:text-3xl group-hover:text-white font-extrabold'>→</button></span> </div> */}
             <Button context=" download resume" style="" btStyle="bg-[#ff0000] text-white" download="/Rohit_kumar_cv.pdf"/>
           </div>

@@ -30,7 +30,7 @@ function Skills_part() {
 
    return (
       <div className='w-screen py-12 bg-[#efefef]  h-auto'>
-         <h2 className='text-4xl text-center uppercase font-DM font-Five text-[#ff0000]' data-aos="fade-down"> My Sills </h2>
+         <h2 className='text-4xl text-center uppercase font-DM font-Five text-[#ff0000]' data-aos="fade-down"> My Skills </h2>
          <div className='w-[90%] h-auto m-auto mt-12 flex flex-wrap justify-center gap-6 border-black'>
             {SkillData.map((item, index) => (
                <div className='w-[12rem] h-[14rem]  '>
