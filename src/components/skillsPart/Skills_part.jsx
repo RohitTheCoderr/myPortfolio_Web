@@ -33,10 +33,9 @@ function Skills_part() {
          <h2 className='text-4xl text-center uppercase font-DM font-Five text-[#ff0000]' data-aos="fade-down"> My Skills </h2>
          <div className='w-[90%] h-auto m-auto mt-12 flex flex-wrap justify-center gap-6 border-black'>
             {SkillData.map((item, index) => (
-               <div className='w-[12rem] h-[14rem]  '>
+               <div className='w-[45%] sm:w-[30%] md:w-[12rem] h-[12rem] md:h-[14rem]  ' data-aos="fade-up">
                   <LoadingCircle key={index} icon={item.icon} />
                   <h1 className='text-center mt-12 font-semibold'>
-
                      {item.text}
                   </h1>
                </div>

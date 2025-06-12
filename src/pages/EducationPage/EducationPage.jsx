@@ -45,7 +45,7 @@ const EducationSection = ({ mainHead, title, subtitle, duration, achievements, d
 
 function EducationPage() {
     const educationData = [
-        {
+        {   
             mainHead: "Matriculation (10th)",
             title: 'Adarsh Public School, Baniya Wara Ballabgarh',
             subtitle: 'Baniya Wara Ballabgarh',
@@ -86,7 +86,7 @@ function EducationPage() {
     return (
         <>
             {/* Header Section */}
-            <div className="bg-[url('/educationpage.png')] bg-center bg-cover h-[60%] w-screen flex justify-center sm:justify-start items-center">
+            <div className="bg-[url('/educationpage.png')] bg-center bg-cover h-[30%] md:h-[40%]  lg:h-[60%] w-screen flex justify-center sm:justify-start items-center">
                 <div className="absolute sm:left-[10%] lg:left-[15%] text-center sm:text-start tracking-wider">
                     <h1 className="text-4xl sm:text-3xl md:text-5xl lg:text-7xl text-[#ffffff] uppercase font-bold mb-2 md:mb-4">
                         My Education
