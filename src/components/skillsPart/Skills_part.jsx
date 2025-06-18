@@ -1,7 +1,7 @@
 import React from 'react'
 import LoadingCircle from '../cards/Skills_sping'
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa6";
-import { SiExpress, SiMongodb, SiRedux } from "react-icons/si";
+import { SiExpress, SiMongodb, SiRedux,SiTypescript } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssLine } from "react-icons/ri";
@@ -21,6 +21,7 @@ const SkillData = [
    { icon: FaCss3Alt, text: "CSS3" },
    { icon: SiRedux, text: "Redux" },
    { icon: SiZulip, text: "Zustand" },
+   { icon: SiTypescript, text: "TypeScript" },
 ]
 
 function Skills_part() {
@@ -29,15 +30,15 @@ function Skills_part() {
    }, []);
 
    return (
-      <div className='w-screen py-12 bg-[#efefef]  h-auto'>
+      <div className='w-screen py-12 bg-[#ededed]  h-auto'>
          <h2 className='text-4xl text-center uppercase font-DM font-Five text-[#ff0000]' data-aos="fade-down"> My Skills </h2>
          <div className='w-[90%] h-auto m-auto mt-12 flex flex-wrap justify-center gap-6 border-black'>
             {SkillData.map((item, index) => (
-               <div className='w-[45%] sm:w-[30%] md:w-[12rem] h-[12rem] md:h-[14rem]  ' data-aos="fade-up">
-                  <LoadingCircle key={index} icon={item.icon} />
-                  <h1 className='text-center mt-12 font-semibold'>
+               <div className=' ' data-aos="fade-up">
+                  <LoadingCircle key={index} icon={item.icon} text={item.text} />
+                  {/* <h1 className='text-center mt-12 font-semibold'>
                      {item.text}
-                  </h1>
+                  </h1> */}
                </div>
             ))}
          </div>

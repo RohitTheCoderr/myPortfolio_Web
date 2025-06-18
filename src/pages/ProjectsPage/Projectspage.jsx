@@ -5,7 +5,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import useScrollToTop from '../../hooks/useScrollToTop';
 // Reusable ProjectCard Component
@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, techStack, images }) => {
     AOS.init();
   }, []);
   return (
-    <div className="bg-slate-800 my-4 w-full md:w-[49%] p-2 sm:p-4 rounded-lg shadow-lg" data-aos="fade-up">
+    <div className="bg-slate-300 my-4 w-full md-[70%] lg:w-[49%] p-2 sm:p-4 rounded-lg shadow-lg" data-aos="fade-up">
       <div className="bg-gray-200 p-4 rounded-lg">
         <h2 className="text-lg sm:text-2xl text-[#ff0000] font-bold mb-2">{title}</h2>
         <p className="text-[12px] sm:text-base mb-2">{description}</p>
@@ -26,11 +26,13 @@ const ProjectCard = ({ title, description, techStack, images }) => {
       </div>
       <div className="h-auto mt-4">
         <Swiper
+          loop={Autoplay}
           spaceBetween={10}
           slidesPerView={1}
           pagination={{ clickable: true }}
           navigation
-          modules={[Pagination, Navigation]}
+          autoplay={true}
+          modules={[Pagination, Navigation, Autoplay]}
           className="rounded-lg overflow-hidden"
         >
           {images.map((src, index) => (
@@ -131,8 +133,8 @@ function Projectspage() {
 
   return (
     <>
-      <h2 className='text-4xl text-center uppercase italic font-DM font-Five text-[#ff0000] mt-5' data-aos="fade-down"> My Projects </h2>
-      <div className="w-[100%] sm:w-[90%] md:w-[95%] lg:w-[90%] flex flex-wrap justify-center gap-4 m-auto">
+      <h2 className='text-4xl text-center uppercase italic font-DM font-Five text-[#ff0000] mt-16' data-aos="fade-down"> My Projects </h2>
+      <div className="w-[90%] flex flex-wrap justify-center gap-4 m-auto">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}

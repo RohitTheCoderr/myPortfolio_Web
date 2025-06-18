@@ -21,10 +21,11 @@ const Footer2 = () => {
 
   return (
     <section className="bg-[#000000] py-8 scrollbar-hide">
-      <div className="w-11/12 mx-auto">
+      {/* <div className="w-11/12 mx-auto"> */}
+      <div className="w-[90%] mx-auto">
         {/* Contact Items */}
-        <div className="flex flex-wrap justify-between border-b-2 border-gray-500 pb-4" >
-          <div className="w-48 sm:w-64 py-4" data-aos="fade-down">
+        <div className="flex flex-wrap justify-between  gap-4 border-b-2 border-gray-500 pb-4" >
+          <div className=" w-auto py-4" data-aos="fade-down">
             <h3 className="flex items-center uppercase text-white text-lg" >
               <FaLink className="text-[#ff0000] mr-3" />profile link
             </h3>
@@ -38,7 +39,7 @@ const Footer2 = () => {
             </div>
           </div>
           {/* Call Us */}
-          <div className="w-40 sm:w-52 py-4" data-aos="fade-down">
+          <div className="w-auto py-4" data-aos="fade-down">
             <h3 className="flex items-center uppercase text-white text-lg" >
               <FaPhone className="text-[#ff0000] mr-3" /> Call Us
             </h3>
@@ -53,28 +54,14 @@ const Footer2 = () => {
             </div>
           </div>
 
-          {/* Address */}
-          <div className="w-40 sm:w-52 py-4" data-aos="fade-down">
-            <h3 className="flex items-center uppercase text-white text-lg" >
-              <FaLocationDot className="text-[#ff0000] mr-3" /> Address
-            </h3>
-            <div className="w-8 h-1 bg-[#ff0000] my-4" ></div>
-            <div>
-              <p className="text-gray-400 text-sm">
-                <span className="text-white">Location: </span>
-                Tirkha colony Ballabgarh Faridabad
-              </p>
-              <p className="text-gray-400 text-sm">(Delhi NCR) Haryana</p>
-            </div>
-          </div>
-
-          <div className=" w-40 sm:w-52 py-4" data-aos="fade-down">
+ {/* Link */}
+          <div className="w-auto py-4" data-aos="fade-down">
             <h3 className="flex items-center uppercase text-white text-lg"  >
               <FaGlobe className="text-[#ff0000] mr-3" /> Link
             </h3>
             <div className="w-8 h-1 bg-[#ff0000] my-4" ></div>
             <div>
-              
+
               <NavLink to={"/"}><p className="text-gray-400 text-sm">
                 <span className="text-white">👉🏻 </span> About me
               </p>
@@ -96,10 +83,28 @@ const Footer2 = () => {
               </p>
               </NavLink>
             </div>
-          </div> 
-          
+          </div>
+
+
+          {/* Address */}
+          <div className=" w-auto py-4" data-aos="fade-down">
+            <h3 className="flex items-center uppercase text-white text-lg" >
+              <FaLocationDot className="text-[#ff0000] mr-3" /> Address
+            </h3>
+            <div className="w-8 h-1 bg-[#ff0000] my-4" ></div>
+            <div>
+              <p className="text-gray-400 text-sm">
+                <span className="text-white">Location: </span>
+                Tirkha colony Ballabgarh Faridabad
+              </p>
+              <p className="text-gray-400 text-sm">(Delhi NCR) Haryana</p>
+            </div>
+          </div>
+
+         
+
           {/* Mail Us */}
-          <div className="w-64 py-4" data-aos="fade-down">
+          <div className="w-auto py-4" data-aos="fade-down">
             <h3 className="flex items-center uppercase text-white text-lg" >
               <FaEnvelope className="text-[#ff0000] mr-3" /> Mail Us
             </h3>
@@ -115,7 +120,7 @@ const Footer2 = () => {
           </div>
 
           {/* Link */}
-          
+
         </div>
 
         {/* Copyright */}

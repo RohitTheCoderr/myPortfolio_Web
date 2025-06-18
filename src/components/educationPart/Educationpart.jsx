@@ -22,7 +22,7 @@ function Educationpart() {
 
 
     return (
-        <div className='w-screen py-12 bg-[#efefef] h-auto'
+        <div className='w-screen py-12 bg-[#fff] h-auto'
             onMouseMove={handleMouseMove}>
             <motion.div
                 className="fixed w-6 h-6 bg-[#ff0000] rounded-full pointer-events-none"

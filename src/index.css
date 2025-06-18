@@ -171,4 +171,10 @@ font-size: 15px;
 color: white;
 }
 
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px #ff0000;
+  /* Change 'white' to your desired stroke color */
+  text-stroke: 1px #ff0000;
+}
 

@@ -44,6 +44,7 @@ function Contact() {
                 (error) => {
                     console.log("Failed to send email:", error);
                     alert("Failed to send message. Please try again later.");
+                    // setFormData({ name: "", mobile: "", email: "", message: "" });
                 }
             )
             .finally(() => setIsLoading(false));

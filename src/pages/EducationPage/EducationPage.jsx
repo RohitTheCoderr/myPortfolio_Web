@@ -3,12 +3,16 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import useScrollToTop from '../../hooks/useScrollToTop';
 
-const EducationSection = ({ mainHead, title, subtitle, duration, achievements, description, images, isImageLeft }) => {
+const EducationSection = ({ mainHead, title, duration, description, images, isImageLeft }) => {
     React.useEffect(() => {
         AOS.init();
     }, []);
     useScrollToTop()
     return (
+        <div
+            className={`w-full h-auto mx-auto py-6 flex ${isImageLeft ? 'bg-[#ededed]' : 'bg-white'
+                } justify-center`}
+        >
         <div
             className={`w-[90%] h-auto mx-auto mt-12 flex flex-wrap md:flex-nowrap ${isImageLeft ? 'flex-row' : 'flex-row-reverse'
                 } justify-center md:justify-between lg:justify-normal items-center gap-2 md:gap-8 my-4`}
@@ -34,11 +38,12 @@ const EducationSection = ({ mainHead, title, subtitle, duration, achievements, d
                     <h4 className="text-lg text-[#ff0000] font-semibold">Duration : {duration}</h4>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
+                    <p className="text-gray-900 leading-relaxed text-sm sm:text-lg">
                         {description}
                     </p>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

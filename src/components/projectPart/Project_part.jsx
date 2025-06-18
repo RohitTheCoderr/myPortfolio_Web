@@ -11,7 +11,7 @@ const Project_part = () => {
     }, []);
 
     return (
-        <div className="w-screen py-12 bg-[#efefef] h-auto">
+        <div className="w-screen py-12 bg-[#fff] h-auto">
             <h2
                 className="text-4xl text-center uppercase font-DM font-Five text-[#ff0000]"
                 data-aos="fade-down"
@@ -19,9 +19,9 @@ const Project_part = () => {
                 My Projects
             </h2>
 
-            <div className="flex flex-wrap justify-center gap-8 mt-8">
-
-                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+            {/* <div className="flex w-[90%] mx-auto flex-wrap justify-between gap-8 mt-8"> */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-[90%] mx-auto gap-8 mt-8">
+                <div className="w-full h-auto cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
                         src="projectsImg/actingScl/actingScl.png"
                         alt="tree"
@@ -38,7 +38,7 @@ const Project_part = () => {
                         
                     </div>
                 </div>
-                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+                <div className="w-full h-auto cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
                         src="/projectsImg/lead_mana_sys/home.png"
                         alt="lead management"
@@ -55,7 +55,7 @@ const Project_part = () => {
                         
                     </div>
                 </div>
-                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+                <div className="w-full h-auto cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
                         src="projectsImg/atifram/home.png"
                         alt="tree"
@@ -71,7 +71,7 @@ const Project_part = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+                <div className="w-full h-auto cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
                         src="projectsImg/shopeaseP/shopease.png"
                         alt="tree"
@@ -87,8 +87,7 @@ const Project_part = () => {
                         </Link>
                     </div>
                 </div>
-
-                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+                <div className="w-full h-auto cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
                         src="projectsImg/srcemP/srcem.png"
                         alt="tree"
@@ -104,7 +103,7 @@ const Project_part = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+                <div className="w-full h-auto cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
                         src="projectsImg/wiztiep/wiztie.png"
                         alt="tree"
@@ -120,7 +119,7 @@ const Project_part = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="h-[13rem] sm:h-[16rem] w-[20rem] sm:w-[25rem] cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
+                <div className="w-full h-auto cursor-pointer border-2 border-gray-300 rounded-lg shadow-lg relative group overflow-hidden flex items-center" data-aos="zoom-in">
                     <img
                         src="projectsImg/foodZilla/foodZilla.png"
                         alt="tree"
@@ -136,8 +135,6 @@ const Project_part = () => {
                         </Link>
                     </div>
                 </div>
-
-
             </div>
 
 
