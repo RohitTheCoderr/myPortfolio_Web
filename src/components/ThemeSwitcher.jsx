@@ -136,7 +136,7 @@ export default function ThemeSwitcher() {
             <button
               key={name}
               onClick={() => setTheme(name)}
-              className={`flex items-center gap-2 p-2 rounded-lg transition-all border shadow-md ${
+              className={`flex border-primary ring-[.4px] ring-primary items-center gap-2 p-2 rounded-lg transition-all border shadow-md ${
                 theme === name ? 'border-primary ring-[1px] ring-primary' : 'border-transparent'
               } hover:bg-gray-100`}
             >
