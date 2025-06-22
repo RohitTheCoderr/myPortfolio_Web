@@ -30,9 +30,9 @@ function Skills_part() {
    }, []);
 
    return (
-      <div className='w-screen py-12 bg-[#ededed]  h-auto'>
-         <h2 className='text-4xl text-center uppercase font-DM font-Five text-[#ff0000]' data-aos="fade-down"> My Skills </h2>
-         <div className='w-[90%] h-auto m-auto mt-12 flex flex-wrap justify-center gap-6 border-black'>
+      <div className='w-screen py-12 bg-white  h-auto'>
+         <h2 className='text-4xl text-center uppercase font-DM font-Five text-heading' data-aos="fade-down"> My Skills </h2>
+         <div className='w-[90%] h-auto m-auto mt-12 flex flex-wrap justify-center gap-6 '>
             {SkillData.map((item, index) => (
                <div className=' ' data-aos="fade-up">
                   <LoadingCircle key={index} icon={item.icon} text={item.text} />
@@ -43,7 +43,7 @@ function Skills_part() {
             ))}
          </div>
          <div className='flex justify-center'>
-               <Button context="Know more" style="border-[#000000] bg-[#ff0000] group-hover:border-black" btStyle="bg-[#000000] text-white" link="skills"/>
+               <Button context="Know more" style="" btStyle="" link="skills"/>
          </div>
 
       </div>

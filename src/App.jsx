@@ -8,12 +8,14 @@ import store, { persistor } from "./libs/redux";
 import { PersistGate } from "redux-persist/integration/react";
 import Footer2 from "./layouts/footer2/Footer2";
 import Navbar from "./layouts/navbar/Navbar";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 export default function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         < div className={styles.container} >
           <Loader />
+          <ThemeSwitcher />
           <Header />
           {/* <Navbar/> */}
           {/* <APPTest /> */}

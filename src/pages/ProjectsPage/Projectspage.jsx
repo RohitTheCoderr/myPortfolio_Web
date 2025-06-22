@@ -15,12 +15,12 @@ const ProjectCard = ({ title, description, techStack, images }) => {
     AOS.init();
   }, []);
   return (
-    <div className="bg-slate-300 my-4 w-full md-[70%] lg:w-[49%] p-2 sm:p-4 rounded-lg shadow-lg" data-aos="fade-up">
+    <div className="bg-slate-200 my-4 w-full md-[70%] lg:w-[49%] !h-full p-2 sm:p-4 rounded-lg shadow-lg" data-aos="fade-up">
       <div className="bg-gray-200 p-4 rounded-lg">
-        <h2 className="text-lg sm:text-2xl text-[#ff0000] font-bold mb-2">{title}</h2>
+        <h2 className="text-lg sm:text-2xl text-primary font-bold mb-2">{title}</h2>
         <p className="text-[12px] sm:text-base mb-2">{description}</p>
         <p className="text-[12px] sm:text-base">
-          <span className="text-[#ff0000] font-bold">Technology used: </span>
+          <span className="text-text font-bold">Technology used: </span>
           {techStack}
         </p>
       </div>
@@ -49,11 +49,25 @@ const ProjectCard = ({ title, description, techStack, images }) => {
 function Projectspage() {
   const projects = [
     {
-      title: "ShopEase (E-Commerce Website)",
-      description: "Developed ShopEase, an e-commerce platform offering a seamless shopping experience with a user-friendly interface, secure checkout, and extensive clothing selection for men, women, and kids.",
-      techStack: "React.js, Zustand,Formik, Tailwind CSS, Node.js, Express, MongoDB",
-      images: ["/projectsImg/shopeaseP/shopease.png", "/projectsImg/shopeaseP/arrival.png", "/projectsImg/shopeaseP/cart.png", "/projectsImg/shopeaseP/categories.png", "/projectsImg/shopeaseP/details.png", "/projectsImg/shopeaseP/whishlist.png"],
+      title: "Aarogya India",
+      description: (
+        <p>
+          Developed and maintain the <strong>LM25 Aarogya India</strong> website — a platform offering Ayurvedic and cosmetic products. It provides a user-friendly shopping experience with secure checkout and a wide selection of products tailored to different health and wellness needs.
+          <li className="flex gap-2 mt-2">
+            <span className="text-text">Link: 👉🏻</span>
+            <a
+              href="https://lm25aarogyaindia.com/"
+              className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"
+            >
+              <span>Click</span>
+            </a>
+          </li>
+        </p>
+      ),
+      techStack: "React.js, redux toolkit, Tailwind CSS, some library for animation, payment gateway, etc.",
+      images: ["/projectsImg/aarogyaIndia/home.png", "/projectsImg/aarogyaIndia/cardslide.png", "/projectsImg/aarogyaIndia/categoryfilter.png", "/projectsImg/aarogyaIndia/package.png", "/projectsImg/aarogyaIndia/therapies.png", "/projectsImg/aarogyaIndia/worldstar.png"],
     },
+
     {
       title: "Lead Management System",
       description: (
@@ -61,11 +75,17 @@ function Projectspage() {
           <li>A basic lead management system where users can add, update, and delete leads</li>
           <li>A login page with authentication using JWT (JSON Web Token).</li>
           <li>Secure authentication and proper token handling.</li>
-          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a href="https://exten-frontend.onrender.com/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a></li>
+          <li className="flex gap-2"><span className="text-text">Link: 👉🏻</span><a href="https://exten-frontend.onrender.com/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a></li>
         </ul>
       ),
       techStack: "React.js, Tailwind CSS, zustand, node.js, express.js, mongoDB, Restfull_API",
       images: ["/projectsImg/lead_mana_sys/home.png", "/projectsImg/lead_mana_sys/createLead.png", "/projectsImg/lead_mana_sys/leads.png", "/projectsImg/lead_mana_sys/login.png", "/projectsImg/lead_mana_sys/phonesize.png"],
+    },
+    {
+      title: "ShopEase (E-Commerce Website)",
+      description: "Developed ShopEase, an e-commerce platform offering a seamless shopping experience with a user-friendly interface, secure checkout, and extensive clothing selection for men, women, and kids.",
+      techStack: "React.js, Zustand,Formik, Tailwind CSS, Node.js, Express, MongoDB",
+      images: ["/projectsImg/shopeaseP/shopease.png", "/projectsImg/shopeaseP/arrival.png", "/projectsImg/shopeaseP/cart.png", "/projectsImg/shopeaseP/categories.png", "/projectsImg/shopeaseP/details.png", "/projectsImg/shopeaseP/whishlist.png"],
     },
     {
       title: "FoodZilla Web App",
@@ -96,7 +116,7 @@ function Projectspage() {
         <ul className="list-disc pl-4">
           <li>Create a platform for students to showcase their completed projects.</li>
           <li>Allow students to create and manage their projects.</li>
-          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a href="https://glittery-capybara-2d6567.netlify.app/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a></li>
+          <li className="flex gap-2"><span className="text-text">Link: 👉🏻</span><a href="https://glittery-capybara-2d6567.netlify.app/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a></li>
         </ul>
       ),
       techStack: "React.js, Tailwind CSS, Redux Toolkit, Node.js, Express, MongoDB",
@@ -122,7 +142,7 @@ function Projectspage() {
           <li>Share insights about the company, its vision, and industry experience.</li>
           <li>Highlight values like innovation, integrity, and customer focus.</li>
           <li> Brief descriptions of key IT services offered (e.g., Web Development)</li>
-          <li className="flex gap-2"><span className="text-[#ff0000]">Link: 👉🏻</span><a href="https://rohitthecoderr.github.io/Atiframe/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a>
+          <li className="flex gap-2"><span className="text-text">Link: 👉🏻</span><a href="https://rohitthecoderr.github.io/Atiframe/" className="text-blue-500 underline flex items-center gap-1 animate-bounce hover:animate-none transition-all duration-300"><span>Click</span></a>
           </li>
         </ul>
       ),
@@ -133,17 +153,20 @@ function Projectspage() {
 
   return (
     <>
-      <h2 className='text-4xl text-center uppercase italic font-DM font-Five text-[#ff0000] mt-16' data-aos="fade-down"> My Projects </h2>
-      <div className="w-[90%] flex flex-wrap justify-center gap-4 m-auto">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            techStack={project.techStack}
-            images={project.images}
-          />
-        ))}
+      <div className="w-full bg-bg pt-16">
+
+        <h2 className='text-4xl text-center uppercase italic font-DM font-Five text-heading ' data-aos="fade-down"> My Projects </h2>
+        <div className="w-[90%] flex flex-wrap justify-center gap-4 m-auto">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              techStack={project.techStack}
+              images={project.images}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

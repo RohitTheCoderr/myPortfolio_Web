@@ -7,17 +7,17 @@
 //       {!href ?
 //         <Link to={to}>
 //             <div className={`bg-black p-[3px] md:p-2 rounded-full group-hover:translate-y-[-10px] transition-transform ${iconbg}`}>
-//               <Icon className={` text-2xl group-hover:text-[#ff0000] ${IconStlye}`} />
+//               <Icon className={` text-2xl group-hover:text-primary ${IconStlye}`} />
 //             </div> 
 //         </Link>
 //          :
 //         <a href={href}>
 //           <div className={`rounded-full p-[0.4rem] group-hover:translate-y-[-10px] transition-transform ${iconbg}`}>
-//             <Icon className={`text-2xl group-hover:text-[#ff0000] ${IconStlye}`} />
+//             <Icon className={`text-2xl group-hover:text-primary ${IconStlye}`} />
 //           </div>
 //         </a>
 //       }
-//       <span className={`text-[#ff0000] text-[10px] sm:text-[14px] md:text-sm font-Five absolute top-[-1.7rem] sm:top-[-2rem] md:top-[-2.5rem] opacity-0 group-hover:opacity-100 transition-opacity ${tooltipStyle}`}>
+//       <span className={`text-primary text-[10px] sm:text-[14px] md:text-sm font-Five absolute top-[-1.7rem] sm:top-[-2rem] md:top-[-2.5rem] opacity-0 group-hover:opacity-100 transition-opacity ${tooltipStyle}`}>
 //         {tooltip}
 //       </span>
 //     </li>
@@ -37,20 +37,20 @@ const NavItem = ({ to, icon: Icon, tooltip, liStyle, IconStlye, iconbg, tooltipS
           {({ isActive }) => (
             <>
               <div
-                className={`bg-black p-[5px] md:p-2 rounded-full transition-transform 
+                className={`bg-primary p-[5px] md:p-2 rounded-full transition-transform 
                   group-hover:translate-y-[-10px] 
                   ${isActive ? 'translate-y-[-10px]' : ''} 
                   ${iconbg}`}
               >
                 <Icon
                   className={`text-2xl transition-colors 
-                    group-hover:text-[#ff0000] 
-                    ${isActive ? '!text-[#ff0000]' : ''} 
+                    group-hover:text-text 
+                    ${isActive ? '!text-text' : ''} 
                     ${IconStlye}`}
                 />
               </div>
               <span
-                className={`text-[#ff0000] text-[10px] min-w-[3rem] w-full max-md:-ml-2 max-md:text-center sm:text-[14px] md:text-sm font-Five absolute 
+                className={`text-bg text-[10px] min-w-[3rem] w-full max-md:-ml-2 max-md:text-center sm:text-[14px] md:text-sm font-Five absolute 
                   top-[-1.7rem] sm:top-[-2rem] md:top-[-2.5rem] 
                   transition-opacity 
                   ${isActive ? 'opacity-100' : 'opacity-0'} 
@@ -65,15 +65,15 @@ const NavItem = ({ to, icon: Icon, tooltip, liStyle, IconStlye, iconbg, tooltipS
       ) : (
         <a href={href}>
           <div
-            className={`rounded-full p-[0.4rem] group-hover:translate-y-[-10px] transition-transform ${iconbg}`}
+            className={`rounded-full p-[0.4rem] group-hover:translate-y-[-10px] transition-transform bg-primary ${iconbg}`}
           >
-            <Icon className={`text-2xl group-hover:text-[#ff0000] ${IconStlye}`} />
+            <Icon className={`text-2xl text-white group-hover:text-text ${IconStlye}`} />
           </div>
           <span
-            className={`text-[#ff0000] text-[10px] sm:text-[14px] md:text-sm font-Five absolute 
+            className={` text-[10px] sm:text-[14px] md:text-sm font-Five absolute 
               top-[-1.7rem] sm:top-[-2rem] md:top-[-2.5rem] 
               opacity-0 group-hover:opacity-100 transition-opacity 
-              ${tooltipStyle}`}
+              ${tooltipStyle? tooltipStyle:"text-white"}`}
           >
             {tooltip}
           </span>

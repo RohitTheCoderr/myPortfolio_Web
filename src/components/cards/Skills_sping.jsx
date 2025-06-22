@@ -18,12 +18,12 @@ const LoadingCircle = ({icon: Icon, text}) => {
      */}
 
        <div className="w-full flex justify-center">
-                <div className="relative group w-32 md:w-40 h-32 md:h-40 bg-[#0D1117] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center gap-2">
-                    <div className="bg-[#161B22] p-4 rounded-full border-4 border-[#fff] group-hover:border-[#ff0000] transition-all duration-300">
-                        <Icon className="text-3xl md:text-4xl text-white group-hover:text-[#ff0000] transition-all duration-300 rotate-0" />
+                <div className="relative group w-32 md:w-40 h-32 md:h-40 bg-text rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center gap-2">
+                    <div className="bg-primary p-4 rounded-full border-4 border-[#fff] group-hover:border-heading transition-all duration-300">
+                        <Icon className="text-3xl md:text-4xl text-white group-hover:text-text transition-all duration-300 rotate-0" />
                     </div>
 
-                    <p className="text-[#C9D1D9] text-sm md:text-base font-medium group-hover:text-[#ff0000] transition-all duration-300">
+                    <p className="text-bg text-sm md:text-base font-medium group-hover:text-white transition-all duration-300">
                         {text}
                     </p>
                 </div>

@@ -173,8 +173,51 @@ color: white;
 
 .outline-text {
   color: transparent;
-  -webkit-text-stroke: 1px #ff0000;
+  -webkit-text-stroke: 1px;
   /* Change 'white' to your desired stroke color */
-  text-stroke: 1px #ff0000;
+  text-stroke: 1px ;
 }
+
+/* for color theam  */
+
+:root {
+  --color-bg:#e1e9f7;
+  --color-primary: #3b82f6;  /* blue (button bg) */
+  --color-heading: #1d4ed8;  /* darker blue */
+  --color-text: #0f172a;     /* slate */
+}
+
+/* Red Theme */
+.theme-red {
+   --color-bg:#ffe6e6;
+  --color-primary: #ef4444; 
+  --color-heading: #b91c1c;
+  --color-text: #7f1d1d;
+}
+
+/* Green Theme */
+.theme-green {
+   --color-bg:#e7fff0;
+  --color-primary: #22c55e;
+  --color-heading: #15803d;
+  --color-text: #064e3b;
+}
+
+/* Purple Theme */
+.theme-purple {
+   --color-bg:#ede1f9;
+  --color-primary: #a855f7;
+  --color-heading: #6b21a8;
+  --color-text: #3b0764;
+}
+
+/* Midnight Theme */
+.theme-midnight {
+  --color-bg: #0f172a;           /* Background - dark navy blue */
+  --color-primary: #cbd5e1;      /* Primary - soft indigo */
+  --color-heading: #a78bfa;      /* Headings - soft violet */
+  --color-text: #6366f1;         /* Body text - light slate */
+}
+
+
 

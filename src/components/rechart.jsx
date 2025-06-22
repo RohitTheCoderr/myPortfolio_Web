@@ -4,7 +4,11 @@ const data = [
   { name: "HTML", proficiency: 90 },
   { name: "CSS", proficiency: 85 },
   { name: "JavaScript", proficiency: 80 },
-  { name: "React.js", proficiency: 75 },
+  { name: "TypeScript", proficiency: 60 },
+  { name: "Next.js", proficiency: 50 },
+  { name: "React.js", proficiency: 90 },
+  { name: "Redux toolkit", proficiency: 70 },
+  { name: "Tailwind css", proficiency: 90 },
   { name: "Node.js", proficiency: 70 },
   { name: "Express.js", proficiency: 70 },
   { name: "MongoDB", proficiency: 65 },
@@ -15,7 +19,7 @@ const COLORS = ["#FF6384", "#36A2EB", "#FFCE56", "#4CAF50", "#43fbe5","#FF9800",
 const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
-      <div className="bg-gradient-to-l from-[#ea8787] to-[#ff0000] text-white  p-2 shadow-lg rounded-md">
+      <div className="bg-gradient-to-l from-heading to-text text-white  p-2 shadow-lg rounded-md">
          <p className="font-semibold ">{` ${payload[0].payload.name}`}</p>
          <p className="text-sm">{`Proficiency: ${payload[0].value}%`}</p>
       </div>
@@ -27,7 +31,7 @@ const CustomTooltip = ({ active, payload }) => {
 const SkillsBarGraph = () => {
   return (
     <div className="max-w-4xl mx-auto py-8 px-1 lg:px-4 ">
-      <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
+      <h2 className="text-3xl font-bold text-center mb-6 text-primary">
         Skills Bar Graph
       </h2>
       <ResponsiveContainer width="100%" height={400} className="">
