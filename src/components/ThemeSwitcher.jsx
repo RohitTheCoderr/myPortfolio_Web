@@ -104,7 +104,7 @@ export default function ThemeSwitcher() {
   return (
     <>
       {/* Floating Button */}
-      <div className="fixed top-32 right-4 z-50">
+      {/* <div className="fixed top-32 right-4 z-50">
         <button
           onClick={() => setOpen(true)}
           className="h-12 w-12 rounded-full bg-primary text-white text-2xl flex items-center justify-center shadow-md"
@@ -112,14 +112,17 @@ export default function ThemeSwitcher() {
         >
           <FaPalette />
         </button>
+      </div> */}
+      <div className="fixed max-md:bottom-5  md:top-40 right-6 z-50">
+        <div className="floating-btn" onClick={() => setOpen(true)}>
+          <FaPalette style={{ color: "#fff", fontSize: 24 }} />
+        </div>
       </div>
-
       {/* Side Drawer */}
       <div
         ref={panelRef}
-        className={`fixed z-60 top-[6rem] md:top-[8rem] right-0 h-full w-54 md:w-64 bg-white shadow-2xl transform transition-transform duration-300 ${
-          open ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed z-60 top-[6rem] md:top-[8rem] right-0 h-full w-54 md:w-64 bg-white shadow-2xl transform transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex justify-between items-center p-4 border-b">
           <h2 className="text-lg font-semibold">Select Theme 🎨</h2>
@@ -136,9 +139,8 @@ export default function ThemeSwitcher() {
             <button
               key={name}
               onClick={() => setTheme(name)}
-              className={`flex border-primary ring-[.4px] ring-primary items-center gap-2 p-2 rounded-lg transition-all border shadow-md ${
-                theme === name ? 'border-primary ring-[1px] ring-primary' : 'border-transparent'
-              } hover:bg-gray-100`}
+              className={`flex border-primary ring-[.4px] ring-primary items-center gap-2 p-2 rounded-lg transition-all border shadow-md ${theme === name ? 'border-primary ring-[1px] ring-primary' : 'border-transparent'
+                } hover:bg-gray-100`}
             >
               {color.map((c, i) => (
                 <div

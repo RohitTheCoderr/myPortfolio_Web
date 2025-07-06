@@ -44,7 +44,12 @@ export default {
               "0px 0px 20px 2px rgba(255, 255, 255, 0.6), 0px 0px 20px #ff0000",
           },
         },
+       
       },
+      animation: {
+      // 'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+       'ping-slow': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
+    },
       colors: {
         bg: "var(--color-bg)",
         primary: "var(--color-primary)",
