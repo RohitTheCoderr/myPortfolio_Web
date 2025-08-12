@@ -11,7 +11,7 @@ const Project_part = () => {
     }, []);
 
     return (
-        <div className="w-screen py-12 bg-bg h-auto">
+        <div className="w-screen py-12 bg-white h-auto">
             <h2
                 className="text-4xl text-center uppercase font-DM font-Five text-heading"
                 data-aos="fade-down"

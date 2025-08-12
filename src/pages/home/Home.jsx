@@ -5,6 +5,7 @@ import { Button } from '../../components/formComponents/Buttons/Button'
 import Skills_part from '../../components/skillsPart/Skills_part'
 import Project_part from '../../components/projectPart/Project_part'
 import useScrollToTop from '../../hooks/useScrollToTop';
+import Services from '../../components/servicespart/Services'
 function Home() {
   useScrollToTop()
   return (
@@ -36,6 +37,7 @@ function Home() {
       </div>
       <Intro />
       <Educationpart />
+      <Services />
       <Skills_part/>
       <Project_part/>
     </>
