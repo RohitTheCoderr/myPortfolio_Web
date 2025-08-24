@@ -19,7 +19,9 @@ export default function App() {
           <Header />
           {/* <Navbar/> */}
           {/* <APPTest /> */}
-          <div className="h-[5rem] md:h-[7rem]"></div>
+          {/* <div className="h-[5rem] md:h-[7rem]"></div> */}
+          <div className="h-[4rem]"></div>
+
           <Outlet />
           <Footer2 />
         </div>

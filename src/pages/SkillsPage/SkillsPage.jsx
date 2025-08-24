@@ -9,7 +9,7 @@ function SkillsPage() {
             <div className='bg-bg py-12'>
                 {/* <div className="bg-[url('/skills.jpg')] bg-center bg-cover h-[40%] lg:h-[60%] w-screen flex justify-center sm:justify-start items-center"></div> */}
                 <div className=" sm:text-start tracking-wider">
-                    <h2 className='text-4xl text-center uppercase italic font-DM font-Five text-heading ' data-aos="fade-down">My Skills</h2>
+                    <h2 className='text-4xl text-center uppercase italic font-DM font-Five  ' data-aos="fade-down">My <span className="text-heading"> Skills</span></h2>
                 </div>
                 <div className=' w-[90%] m-auto flex flex-wrap items-center justify-between'>
                     <div className='w-full m-auto sm:w-[80%] md:w-[45%] md:m-0'>

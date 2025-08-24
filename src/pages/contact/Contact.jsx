@@ -1,7 +1,7 @@
 
 
 import React, { useState } from "react";
-import { FaMobileAlt, FaWhatsapp, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaMobileAlt, FaWhatsapp, FaLinkedinIn, FaGithub, FaInstagram, } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 import useScrollToTop from '../../hooks/useScrollToTop';
@@ -54,31 +54,67 @@ function Contact() {
         { href: "https://wa.me/9654853181?text=Hello!%20I'd%20like%20to%20know%20more%20about%20your%20services.", icon: FaWhatsapp, tooltip: 'Whatsapp' },
         { href: 'https://www.linkedin.com/in/rohit-kumar2003', icon: FaLinkedinIn, tooltip: 'Linkedin' },
         { href: 'https://github.com/RohitTheCoderr', icon: FaGithub, tooltip: 'Github' },
-        { href: 'https://www.instagram.com/rohit_kr3181/?__pwa=1', icon: FaInstagram, tooltip: 'Instagram' },
+        { href: 'https://x.com/myGmail261821', icon: FaInstagram, tooltip: 'X' },
+        // { href: 'https://www.instagram.com/rohit_kr3181/?__pwa=1', icon: FaInstagram, tooltip: 'Instagram' },
     ];
 
     return (
         <section className="w-full relative bg-cover py-4 bg-bg">
             <div className="absolute inset-0 bg-opacity-30"></div>
             <div className="h-auto w-full relative pt-8">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                        Get In <span className="text-heading">Touch</span>
+                    </h2>
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                        Ready to start your next project? Let's create something amazing
+                        together.
+                    </p>
+                </div>
                 <div className="h-auto w-auto m-auto flex justify-around flex-wrap-reverse gap-4">
                     <div className="h-auto bg-black/5 backdrop-blur-lg py-2 border-[1px] border-primary rounded-lg">
-                        <h1 className="text-primary text-2xl font-semibold text-center underline">Contact Information</h1>
-                        <div className="w-[80%] m-auto sm:w-[70%] md:w-[30rem] sm:px-2 mt-10">
-                            <div className="flex gap-4 my-4">
+                        {/* <h1 className="text-primary text-2xl font-semibold text-center underline">Contact Information</h1> */}
+                        <div className="w-[90%] m-auto sm:w-[70%] md:w-[30rem] sm:px-2 ">
+                        <div>
+                            <h3 className="text-2xl font-bold text-heading mb-3">
+                                Let's Connect
+                            </h3>
+                            <p className="mb-8 w-full">
+                                I'm always interested in new opportunities and exciting
+                                projects. Whether you have a question or just want to say hi,
+                                I'll try my best to get back to you!
+                            </p>
+                        </div>
+                            <div className="flex items-center gap-4 my-2">
                                 <FaMobileAlt className="text-xl text-text" />
-                                <span className="text-text text-lg">+91-9654853181, 8595152392</span>
+                                <a
+                                    href="tel:+919654853181"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 bg-card border border-border rounded-lg hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 text-sm sm:text-lg text-text font-medium"
+                                >
+                                    +91-9654853181
+                                </a>
+                                {/* <span className="text-text text-lg">+91-9654853181</span> */}
                             </div>
-                            <div className="flex gap-4 my-4">
+                            <div className="flex items-center gap-4 my-2">
                                 <AiOutlineMail className="text-xl text-text" />
-                                <span className="text-text text-lg">rohitkumar9643017@gmail.com</span>
+                                <a
+                                    href="mailto:rohitkumar9643017@gmail.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 bg-card border rounded-lg hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105 text-sm sm:text-lg text-text font-medium"
+                                >
+                                    rohitkumar9643017@gmail.com
+                                </a>
+                                {/* <span className="text-text text-lg">rohitkumar9643017@gmail.com</span> */}
                             </div>
-                            <div className="flex gap-4 my-4">
+                            <div className="flex gap-4 my-2">
                                 <FaLocationDot className="text-2xl text-text" />
-                                <span className="text-text text-lg">Tirkha colony Ballabgarh Faridabad (Delhi NCR) Haryana</span>
+                                <span className="text-text text-sm sm:text-lg font-medium">Tirkha colony Ballabgarh Faridabad (Delhi NCR) Haryana</span>
                             </div>
                         </div>
-                        <div className="mt-10 flex justify-center gap-4">
+                        <div className="mt-10 flex justify-center gap-4 ">
                             {navItems.map((item, index) => (
                                 <NavItem key={index} href={item.href} icon={item.icon} tooltip={item.tooltip} iconbg={""} liStyle={"w-[3rem]"} tooltipStyle={"text-text"} />
                             ))}
@@ -86,11 +122,11 @@ function Contact() {
                     </div>
 
                     <div className="h-auto w-[28rem] flex flex-col items-center bg-black/5 backdrop-blur-lg py-2 border-[1px] border-primary rounded-lg">
-                        <h1 className="text-primary text-2xl font-semibold underline">Get in Touch</h1>
-                        <form onSubmit={sendEmail} className="mt-6 w-auto p-4 rounded-lg">
+                        {/* <h1 className="text-primary text-2xl font-semibold underline">Get in Touch</h1> */}
+                        <form onSubmit={sendEmail} className="mt-3 w-auto p-4 rounded-lg">
                             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required className=" bg-transparent text-heading border-[1px] border-heading h-[2rem] sm:h-[2.5rem] md:h-[2.7rem] lg:h-[3.2rem] xl:h-[3.5rem] w-full text-[14px] sm:text-[16px] md:text-[18px] lg:text-lg rounded-sm sm:rounded-sm md:rounded-md lg:rounded-lg xl:rounded-lg pl-[4px] sm:pl-2 md:pl-3 lg:pl-4 mb-2 sm:mb-4" />
                             <input type="number" name="mobile" placeholder="Mobile No." value={formData.mobile} onChange={handleChange} required className=" bg-transparent text-heading border-[1px] border-heading h-[2rem] sm:h-[2.5rem] md:h-[2.7rem] lg:h-[3.2rem] xl:h-[3.5rem]  w-full text-[14px] sm:text-[16px] md:text-[18px] lg:text-lg rounded-sm sm:rounded-sm md:rounded-md lg:rounded-lg xl:rounded-lg pl-[4px] sm:pl-2 md:pl-3 lg:pl-4 mb-2 sm:mb-4" />
-                            <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className=" bg-transparent text-heading border-[1px] border-heading h-[2rem] sm:h-[2.5rem] md:h-[2.7rem] lg:h-[3.2rem] xl:h-[3.5rem]  w-full text-[14px] sm:text-[16px] md:text-[18px] lg:text-lg rounded-sm sm:rounded-sm md:rounded-md lg:rounded-lg xl:rounded-lg pl-[4px] sm:pl-2 md:pl-3 lg:pl-4 mb-2 sm:mb-4"  />
+                            <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className=" bg-transparent text-heading border-[1px] border-heading h-[2rem] sm:h-[2.5rem] md:h-[2.7rem] lg:h-[3.2rem] xl:h-[3.5rem]  w-full text-[14px] sm:text-[16px] md:text-[18px] lg:text-lg rounded-sm sm:rounded-sm md:rounded-md lg:rounded-lg xl:rounded-lg pl-[4px] sm:pl-2 md:pl-3 lg:pl-4 mb-2 sm:mb-4" />
                             <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required className="bg-transparent text-heading border border-heading h-32 w-full text-[14px] sm:text-[16px] md:text-[18px] lg:text-lg rounded-lg pl-[4px] sm:pl-2 md:pl-3 lg:pl-4 xl:pl-4 mb-4"></textarea>
                             <button type="submit" className="cursor-pointer border-[1px] border-heading h-[2rem] sm:h-[2.5rem] md:h-[2.7rem] lg:h-[3.2rem] xl:h-[3.5rem] w-full sm:text-[18px] md:text-[20px] lg:text-lg xl:text-lg rounded-sm sm:rounded-sm md:rounded-md lg:rounded-lg xl:rounded-lg outline-none font-semibold bg-heading hover:bg-text uppercase text-white">
                                 {isLoading ? "Sending..." : "Send Message"}

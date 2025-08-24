@@ -1,7 +1,7 @@
 import React from 'react'
 import LoadingCircle from '../cards/Skills_sping'
-import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa6";
-import { SiExpress, SiMongodb, SiRedux,SiTypescript } from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt, FaDiagramNext, FaPaypal } from "react-icons/fa6";
+import { SiExpress, SiMongodb, SiRedux,SiSupabase,SiTypescript } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssLine } from "react-icons/ri";
@@ -12,16 +12,20 @@ import { Button } from '../formComponents/Buttons/Button';
 
 const SkillData = [
    { icon: SiMongodb, text: "MongoDB" },
+   { icon: SiSupabase, text: "Supabase" },
+   { icon: FaNode, text: "Node.js" },
    { icon: SiExpress, text: "Express.js" },
    { icon: FaReact, text: "React.js" },
-   { icon: FaNode, text: "Node.js" },
+   { icon: FaDiagramNext, text: "Next.js" },
    { icon: IoLogoJavascript, text: "javaScript" },
+   { icon: SiTypescript, text: "TypeScript" },
+   { icon: SiRedux, text: "Redux" },
+   { icon: SiZulip, text: "Zustand" },
    { icon: RiTailwindCssLine, text: "Tailwind CSS" },
    { icon: FaHtml5, text: "HTML5" },
    { icon: FaCss3Alt, text: "CSS3" },
-   { icon: SiRedux, text: "Redux" },
-   { icon: SiZulip, text: "Zustand" },
-   { icon: SiTypescript, text: "TypeScript" },
+   { icon: FaPaypal, text: "payment gateway" },
+
 ]
 
 function Skills_part() {
@@ -31,7 +35,7 @@ function Skills_part() {
 
    return (
       <div className='w-screen py-12 bg-bg  h-auto'>
-         <h2 className='text-4xl text-center uppercase font-DM font-Five text-heading' data-aos="fade-down"> My Skills </h2>
+         <h2 className='text-4xl text-center uppercase font-DM font-Five text-heading' data-aos="fade-down"> Skills & Expertise</h2>
          <div className='w-[90%] h-auto m-auto mt-12 flex flex-wrap justify-center gap-6 '>
             {SkillData.map((item, index) => (
                <div className=' ' data-aos="fade-up">
